@@ -77,3 +77,113 @@ let revname=arrname.reverse()
 console.log(revname)
 let reve=revname.join('')
 console.log(reve)
+
+
+// 11. slice()  - to extract the element from the array
+
+let arr4=[10,20,30,40,50]
+console.log(arr4)
+console.log(arr4.slice(1,3))
+
+// 12. splice() - to reject the specified element from the array
+
+// splice() method will take 3 parameters. (startindex, deletecount, replacevalue) 
+
+// this method will modify the original array 
+
+let arr5=[8,10,20,40,66,30,22,10]
+arr5.splice(2,4)
+console.log(arr5)
+arr5.splice(2,4,400) // to add the value at the end of the given array
+console.log(arr5)
+
+let subjects=['html','css','js']
+subjects.splice(2,0,'python')
+console.log(subjects)
+
+
+// HIGHER ORDER ARRAY METHODS
+
+// 1. map()  - It has 3 parameter that is element, index, array
+
+// map is used to travese and do any operation
+
+// it does not check any condition
+
+// map method is higher order array method which is used to traverse array and perform any operation with all the elements from the array 
+
+// It will return one new array 
+
+// It will take one callback there it will take 3 parameters (Element,index,array)
+
+// to add 5 value to all element 
+let numbers=[80,75,65,82,92]
+let arrmap=numbers.map((ele)=>{
+    return ele+5
+})
+console.log(arrmap)
+
+// to transform to uppercase 
+let subject=['html','css','java','js']
+console.log(subject)
+let cap=subject.map((vari)=>{
+    return vari.toUpperCase()
+})
+console.log(cap)
+
+// to add 100 value to all elements of array 
+let price=[10,20,234,23,400]
+let retail=price.map((ele)=>{
+    return ele+100
+})
+console.log(retail)
+
+// 2. filter() - higher order method used to check the condition only.
+
+// it is one higherorder array method , used to traverse the array and check the conditions If the condition matched then it will return one new array 
+
+let filtered=numbers.filter((ele)=>{
+    return ele > 80
+})
+console.log(filtered)
+
+
+// 3. reduce() - the accumulator will take the first value by default
+
+// to reduce the array into single value 
+
+// it will take 4 arguments -  (accumulator,element, index, array )
+
+// it is one higher order array method used to convert the array into single value. 
+
+let arrr=[10,20,30,40,50]
+let sum=arrr.reduce((acc,ele)=>{
+    return acc+ele
+})
+console.log(sum)
+
+// 4. sort() - to sort the array in asc or desc
+
+// it is used to sort the array into asc or desc order and it will take 2 parameters in callback function.
+
+// first parameter - second parameter ->will give ascending order 
+// second parameter - first parameter -> will give descending order 
+
+let arr11=[1,4,5,9,6,38,43,11]
+let acc=arr11.sort((a,b)=>{
+    return a-b
+})
+console.log(acc)
+
+let dec=arr11.sort((a,b)=>{
+    return b-a
+})
+console.log(dec)
+
+
+// 5. foreach() 
+
+let x=price.forEach((ele)=>{
+    console.log(ele)
+    return ele
+})
