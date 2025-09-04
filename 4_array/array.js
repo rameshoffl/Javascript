@@ -181,9 +181,10 @@ let dec=arr11.sort((a,b)=>{
 console.log(dec)
 
 
-// 5. foreach() 
+// 5. foreach() - It is also like the map() method but it can't return the values to the variable rather that it can display the values spontaneously.
 
 let x=price.forEach((ele)=>{
     console.log(ele)
     return ele
 })
+
