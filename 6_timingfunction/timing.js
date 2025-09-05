@@ -33,3 +33,11 @@ setTimeout(sorry,4000)
 
 let si=setInterval(sorry,1000)
 clearInterval(si)
+
+//clearTimeout() - it is used to cancel a timeout that was previously established by setTimeout()
+
+clearTimeout(st)
+
+//clearInterval() - it is used to cancel a timeout that was previously established by setInterval()
+
+clearInterval(si)
