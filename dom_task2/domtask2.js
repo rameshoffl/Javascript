@@ -121,55 +121,18 @@ const indianCricketTeam = [
     }
 ];
 
-
-
-
-
-
-// let players=indianCricketTeam.map((ele)=>{
-//     console.log(ele.name)
-
-//     let div=document.createElement('div')
-//     div.classList.add('card')
-
-//     let heading=document.querySelector('.heading')  
-//     heading.after(div)
-
-//     div.innerHTML=`<h2>Player name: ${ele.name} </h2> <h4>Role: ${ele.role}</h4>`
-
-// })          - to create the cards for each player
-
-
-
-// let sub=["html","css","js","reactjs","nodejs","mongodb"]
-
-//         let ol=document.querySelector('ol')
-        
-//         sub.map((ele)=>{
-//             console.log(ele)
-
-//             let li=document.createElement('li')
-//             li.innerText=ele
-
-//             ol.append(li)
-//         })    - to create list items from array
-
-
-
-
-
-let nav=document.createElement('div')
+let nav=document.querySelector('nav')
 nav.classList.add('nav')
+nav.innerHTML=`<h2>my logo</h2><ul><li>home</li><li>about</li><li>contact</li></ul><button>login</button>`
+document.body.prepend(nav)
 
-document.body.append(nav)
 
+
+let main=document.querySelector('main')
 indianCricketTeam.map((ele)=>{
-    let nav=document.querySelector('.nav')
-
-    let card=document.createElement('div')
-    card.classList.add('card')
-
-    card.after(nav)
-
-    card.innerHTML=`<h2>Name: ${ele.name}</h2> <h4>Role: ${ele.role}</h4>`
+    let div=document.createElement('div')
+    div.classList.add('card')
+    
+    div.innerHTML=`<h2>Name:${ele.name}</h2><h4>Role:${ele.role}</h4><h4>Jersey:${ele.jerseyNumber}</h4>`
+    main.append(div)
 })
