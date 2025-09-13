@@ -1,27 +1,29 @@
 let red=document.querySelector('#box1')
 let green=document.querySelector('#box2')
-let blue=document.querySelector('#box3')
-let voilet=document.querySelector('#box4')
-let aqua=document.querySelector('#box5')
-
+let grey=document.querySelector('#box3')
+let blue=document.querySelector('#box4')
+let pink=document.querySelector('#box5')
 
 let background=document.querySelector('.outer')
-let bgred=()=>{
+let chred=()=>{
     background.style.backgroundColor='red'
 }
 
-let bggreen=()=>{
+let chgreen=()=>{
     background.style.backgroundColor='green'
 }
 
-let bgblue=()=>{
-    background.style.backgroundColor='blue'
+let chgrey=()=>{
+    background.style.backgroundColor='grey'
+}
+let chgrey2=()=>{
+    background.style.backgroundColor='white'
 }
 
-let bgpink=()=>{
+let chblue=()=>{
+    background.style.backgroundColor='lightblue'
+}
+
+let chpink=()=>{
     background.style.backgroundColor='pink'
-}
-
-let bgaqua=()=>{
-    background.style.backgroundColor='aqua'
 }

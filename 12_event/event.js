@@ -31,16 +31,13 @@ let msg=()=>{
 
 
 
-
-let box=document.querySelector('.box')    //mouse hover event
-let changebackground=()=>{
-    
-    box.style.backgroundColor='red'
+let card=document.querySelector('.card')
+let changebg=()=>{
     console.log('hover')
+    card.style.backgroundColor='green'
 }
 
-
-let changebackground2=()=>{
-    console.log('hiii')
-    box.style.backgroundColor='aqua'   
+let changebg2=()=>{
+    console.log('hiiii')
+    card.style.backgroundColor='red'
 }

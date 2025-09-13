@@ -6,56 +6,47 @@
 
 body{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .outer{
-    position: relative;
     height: 500px;
-    width: 700px;
+    width: 600px;
     border: 2px solid black;
+    position: relative;
 }
 
 .box{
-    position: absolute;
     height: 100px;
     width: 100px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-    cursor: pointer;
+    border: 2px solid black;
+    position: absolute;
 }
-
 #box1{
-    top: 0;
-    left: 0;
-    background-color: red;
+    background-color:red ;
 }
-
 #box2{
-    top: 0;
-    right: 0;
-    background-color: green;
+   top: 0;
+   right: 0;
+   background-color: green;
 }
 
 #box3{
     bottom: 0;
     left: 0;
-    background-color: blue;
+    background-color: grey;
 }
 
 #box4{
     bottom: 0;
     right: 0;
-    background-color: pink;
+    background-color: lightblue;
 }
 
 #box5{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: aqua;
+    background-color: pink;
 }
