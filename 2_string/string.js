@@ -119,7 +119,7 @@ console.log(combine)
 
 
 
-// ! 9. replace()
+// ! 9. replace() - it is used to replace one string with another string.
 
 let msg3 = "Bangalore"
 
@@ -128,7 +128,8 @@ let replaceMsg3 = msg3.replace("a", "@")
 console.log(replaceMsg3)
 
 
-// ! 10. replaceAll()
+// ! 10. replaceAll() - it is used to replace all the occurances of one string with another string.
+
 
 let allReplaceMsg3 = msg3.replaceAll("a", "@")
 console.log(allReplaceMsg3)
@@ -182,7 +183,7 @@ console.log(str6.slice(-7,-2)) // sessi
 
 
 
-// ! 13. substring()
+// ! 13. substring() - to extract one string from another string
 
 console.log(str6.substring(0,3))   // thi
 console.log(str6.substring(8))    // javascript session

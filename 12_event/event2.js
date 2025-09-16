@@ -58,3 +58,4 @@ input.addEventListener('keyup',(e)=>{
     div.innerHTML=`<h3>${e.target.value}</h3>`   //it is important to target the input box to get the value of input tag - these target method we are also use in react
     console.log('key is released')
 })
+
