@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event propagation</title>
+    <style>
+        .outer{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            justify-items: center;
+            align-content: center;
+        }
+        .middle{
+            height: 300px;
+            width: 300px;
+            background-color: antiquewhite;
+            justify-items: center;
+            align-content: center;
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            justify-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./eventPropagation.js"></script>
+</body>
+</html>

@@ -57,3 +57,13 @@ console.log(d1)
 .finally(
     console.log("finally")
 )
+
+
+
+
+
+
+// all 
+// any
+// allsettled
+// race
