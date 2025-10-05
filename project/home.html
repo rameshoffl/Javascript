@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to home</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+
+    <script>
+        let username =localStorage.getItem('username')
+        console.log(username)
+        let div=document.createElement('div')
+        div.innerHTML=`<h2>Welcome to ${username} Web Page</h2>`
+        document.body.append(div)
+    </script>
+</body>
+</html>

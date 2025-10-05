@@ -50,7 +50,9 @@ let func=function(){
 }
 func()
 
-// arrow function ***
+// arrow function ***  -> implicit return, syntactic sugar, present in temporal dead zone
+
+let add=(a,b)=>a+b;
 
 let fun1 = () => {
     console.log('i am arrow function')
@@ -112,3 +114,67 @@ fun(()=>{
 })
 
 ()
+
+
+
+// function names:
+ 
+// named function
+// anonymous function 
+// first-class function 
+// functional expression 
+// iife -> prevents global pollution
+// arrow function 
+// higher order function 
+// callback function 
+// nested function 
+
+
+
+// generator function -> to pause and give output
+
+let arrr=[1,2,3,4,5,6,7];
+function * iterate(){
+    for (let i=0; i<arrr.length; i++){
+        yield arrr[i]
+    }
+    return 'finised execution'
+}
+
+let i = iterate()
+let obj;
+
+do{
+    obj=i.next();
+    console.log(obj.value)
+}while(!obj.done)
+
+
+
+
+
+
+// closure - object used by the inner function that stores the outer function data 
+
+console.log('start')
+
+function count(){
+    let count=0;
+    let msg='hello'
+
+    function increment(){
+        count++
+        return count
+    }
+
+    return increment
+}
+
+let p=count()
+console.log(a())
+console.log(a())
+console.log(a())
+
+let q=count()
+console.log(q())
+console.log(q())
